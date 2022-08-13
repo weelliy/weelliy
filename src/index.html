@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-      <h5>Андрей Браун</h5>
+      <h5></h5>
        <nav>
-        <div class="logo"></div>
+        <div class="logo">Андрей Браун</div>
             <div class="menu">
                 <ul>
                     <li>ОБО МНЕ</li>
@@ -38,184 +38,210 @@
     </div>
     
     <div class="about_me">
-        <h3>ОБО МНЕ</h3>
-        <img src="photo/Черта заголовка.png" alt="">
+        <h2>ОБО МНЕ</h2>
+        <hr>
         <br>
-        <img src="photo/фотка.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, unde.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, unde.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim.</p>
-        <a href="#" download="resume"> Скачать резюме</a>
+        <img src="img/фотка.png" alt="">
+        <p class="firstTxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nisi incidunt commodi dolorum, accusantium eaque laudantium quod eligendi perspiciatis repellat?</p>
+        <p class="secondTxt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis veniam qui in, ipsam, ipsa aliquam iste accusantium quidem corrupti architecto.</p>
+        <input type="submit" value="Скачать резюме">
     </div>
     
     <div class="skills">
+      <div class="my_skills">
        <h2>Что я умею</h2>
-           <img src="photo/Черта заголовка.png" alt="">
+          <hr>
            <div class="skills_item">
-              <img src="photo/ноут.png" alt="">
-                <p><b>Веб-дизайн</b></p>
-                <h3></h3>
+              <img src="img/ноут.png" alt="">
+                <h3>Веб-дизайн</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
            </div>
            <div class="skills_item">
-              <img src="photo/знак.png" alt="">
-               <p><b>Разработка</b></p>
-                <h3></h3>
+              <img src="img/знак.png" alt="">
+                <h3>Разработка</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
            </div>
            <div class="skills_item">
-              <img src="photo/ракета.png" alt="">
-               <p><b>CEO-Оптимизация</b></p>
-                <h3></h3>
+              <img src="img/ракета.png" alt="">
+                <h3>CEO-Оптимизация</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
            </div>
            <div class="skills_item">
-              <img src="photo/граммофон.png" alt="">
-               <p><b>Маркетинг</b></p>
-                <h3></h3>
+              <img src="img/граммофон.png" alt="">
+                <h3>Маркетинг</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
            </div>
+           <div class="clear"></div>
+        </div>
     </div>
     
     <div class=cases>
-        <h3></h3>
-        <img src="photo/Черта заголовка.png" alt="">
-        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>КЕЙСЫ</h2>
+        <hr>
+        <p class="post_h">Lorem ipsum dolor sit amet.</p>
+        <img src="img/фотка2.jpg" alt="">
         <div class="descript">
-            <img src="photo/фотка2.png" alt="">
-            <h5>CLIENT:</h5>
-            <p>Какая-то компания</p>
-            <h5>WEBSITE:</h5>
-            <p>http://www.somedomain.com</p>
-            <input type="text">
+           <div class="descript1">
+                <h3>CLIENT:</h3>
+                <p>Какая-то компания</p>
+                <h3>WEBSITE:</h3>
+                <p>http://www.somedomain.com</p>
+                <input type="submit" value="VISIT LIVE SITE">
+            </div>
+            <div class="descript2">
+                <h3>Название проекта</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ab consequuntur ut blanditiis ea, similique dolor fuga nisi eligendi, cumque beatae veniam, voluptatibus alias eveniet magnam magni dolorum, quam. Ut voluptatibus corporis, deserunt debitis praesentium suscipit nulla, perspiciatis architecto quaerat, molestias ullam neque sapiente odio sit ducimus similique nobis consectetur.</p>
+            </div>
         </div>
-        <a href="#" download="live_site"> VISIT LIVE SITE</a>
-        <div class="descript1">
-            <h4>Название проекта</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, doloremque.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, voluptatum!<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
+        <div class="clear"></div>
     </div>
     
     <div class="cost_calculation">
-        <h3>Расчёт стоимости</h3>
+        <h2>Расчёт стоимости</h2>
         <div class="type_of_site">
-            <select name="list1" id="list">
-                <option value="Opt1">1 пункт</option>
-                <option value="Opt1">2 пункт</option>
-                <option value="Opt1">3 пункт</option>
+           <h3>ТИП САЙТА</h3>
+            <select class="mySelect" name="list1" id="list">
+                <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">1 пункт</option>
+                <option value="3">2 пункт</option>
+                <option value="4">3 пункт</option>
             </select>
         </div>
         <div class="design">
-            <select name="list1" id="list">
-                <option value="Opt1">1 пункт</option>
-                <option value="Opt1">2 пункт</option>
-                <option value="Opt1">3 пункт</option>
+           <h3>ДИЗАЙН</h3>
+            <select class="mySelect" name="list1" id="list">
+               <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">1 пункт</option>
+                <option value="3">2 пункт</option>
+                <option value="4">3 пункт</option>
             </select>
         </div>
         <div class="adaptability">
-            <select name="list1" id="list">
-                <option value="Opt1">1 пункт</option>
-                <option value="Opt1">2 пункт</option>
-                <option value="Opt1">3 пункт</option>
+           <h3>АДАПТИВНОСТЬ</h3>
+            <select class="mySelect" name="list1" id="list">
+               <option value="1" selected disabled>Выберите пункт</option>
+                <option value="2">1 пункт</option>
+                <option value="3">2 пункт</option>
+                <option value="4">3 пункт</option>
             </select>
         </div>
+        <hr>
         <div class="data">
-           <div class="dedlines">
+           <div class="deadlines">
                 <span>Сроки</span>
-                <input type="number">
+                <div class="inone">
+                    <input type="number">
+                </div>
             </div>
             <div class="cost">
                 <span>Стоимость</span>
-                <input type="number">
+                <div class="intwo">
+                    <input type="number">
+                </div>
             </div>
         </div>
     </div>
         
     <div class="statistics">
-        <h3>НЕМНОГО СТАТИСТИКИ</h3>
-        <img src="photo/Черта заголовка.png" alt="">
-        <div class="smile">
-            <img src="photo/смайл.png" alt="">
-            <p><b>120</b></p>
-            <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+        <h2>НЕМНОГО СТАТИСТИКИ</h2>
+        <hr>
+        <div class="statistics_container">
+            <div class="statistics_item">
+                <img src="img/смайл.png" alt="">
+                <h3>120</h3>
+                <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
+            </div>
+            <div class="statistics_item">
+                <img src="img/скобки.png" alt="">
+                <h3>4,600</h3>
+                <p>ЧАСОВ РАБОТЫ</p>
+            </div>
+            <div class="statistics_item">
+                <img src="img/галочка.png" alt="">
+                <h3>340</h3>
+                <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
+            </div>
+            <div class="statistics_item">
+                <img src="img/кубок.png" alt="">
+                <h3>23</h3>
+                <p>НАГРАД ПОЛУЧЕНО</p>
+            </div>
         </div>
-        <div class="exp">
-            <img src="photo/скобки.png" alt="">
-            <p><b>4,600</b></p>
-            <p>ЧАСОВ РАБОТЫ</p>
-        </div>
-        <div class="complete">
-            <img src="photo/галочка.png" alt="">
-            <p><b>340</b></p>
-            <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
-        </div>
-        <div class="achive">
-            <img src="photo/кубок.png" alt="">
-            <p><b>23</b></p>
-            <p>НАГРАД ПОЛУЧЕНО</p>
-        </div>
+        <div class="clear"></div>
     </div>
     
     <div class="reviews">
-        <h3>ОТЗЫВЫ</h3>
-        <img src="photo/Черта заголовка.png" alt="">
+        <h2>ОТЗЫВЫ</h2>
+        <hr>
         <div class="feedback">
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed officia facere suscipit.<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <img src="img/фотка3.png" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet fuga ex a omnis dolore magnam expedita, voluptas repellat laboriosam facere.</p>
         </div>
         <div class="customer_info">
-            <p><b>Михаил</b>, Ген директор ПАО "Гаспром".</p>
+            <p><span>Михаил,</span> Ген директор ПАО "Гаспром".</p>
         </div>
     </div>
     
     <div class="my_contacts">
-        <h3>МОИ КОНТАКТЫ</h3>
-        <img src="photo/Черта заголовка.png" alt="">
+        <h2>МОИ КОНТАКТЫ</h2>
+        <hr>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quod!</p>
         <div class="buttons">
-            <div class="map">
-                <img src="photo/гео.png" alt="">
-                <p>Санкт-Петербург<br>Невский проспект 11</p>
+            <div class="buttons_item">
+                <img src="img/гео.png" alt="">
+                <p class="geo">Санкт-Петербург Невский проспект 11</p>
             </div>
-            <div class="email">
-                <img src="photo/конверт.png" alt="">
+            <div class="buttons_item">
+                <img src="img/конверт.png" alt="">
                 <p>info@companyname.com</p>
             </div>
-            <div class="phone_number">
-                <img src="photo/труба.png" alt="">
+            <div class="buttons_item">
+                <img src="img/труба.png" alt="">
                 <p>+7 999 999-99-99</p>
             </div>
+            <div class="clear"></div>
         </div>
         <div class="letter">
-            <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
-            <div class="name">
-                <input type="text" name="text_input" placeholder="Имя">
+            <h2>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h2>
+            <div class="namema">
+                <input class="dat" type="text" name="text_input" placeholder="Имя">
+                <input class="dat" type="text" name="text_input" placeholder="Email">
             </div>
-            <div class="email">
-                <input type="text" name="text_input" placeholder="Email">
-            </div>
-            <div class="name">
-                <textarea name="" id="" cols="50" rows="5">
-Сообщение
-                </textarea>
+            <div class="lett">
+                <textarea placeholder="Сообщение" name="" id="" cols="50" rows="5"></textarea>
             </div>
             <div class="submit">
                 <input type="submit" value="Отправить">
             </div>
-            <img src="photo/фб.png" alt="">
-            <img src="photo/твитер.png" alt="">
-            <img src="photo/мяч.png" alt="">
-            <img src="photo/киса.png" alt="">
-            <img src="photo/инст.png" alt="">
-            <img src="photo/ин.png" alt="">
+            <div class="socials">
+               <div class="networks">
+                   <img src="img/фб.png" alt="">
+               </div>
+               <div class="networks">
+                   <img src="img/твитер.png" alt="">
+               </div>
+               <div class="networks">
+                   <img src="img/мяч.png" alt="">
+               </div>
+               <div class="networks">
+                   <img src="img/киса.png" alt="">
+               </div>
+               <div class="networks">
+                   <img src="img/инст.png" alt="">
+               </div>
+               <div class="networks">
+                   <img src="img/ин.png" alt="">
+               </div>  
+            </div>
         </div>
     </div>
     
     <div class="map">
-        <img src="photo/Карта копия.png" alt="">
+        <img src="img/mappa.jpg" alt="">
     </div>
     
     <footer>
-        Copyright©2021 Андрей Браун. Design by Web
+        <p>Copyright©2021 Андрей Браун. Design by Web</p>
     </footer>
     
 </body>
