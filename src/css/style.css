@@ -6,6 +6,7 @@ nav{
     width: 100%;
     height: 60px;
     background: #344051;
+    position: fixed;
 }
 
 .logo{
@@ -14,6 +15,9 @@ nav{
     line-height: 60px;
     padding-left: 388px;
     float: left;
+    -webkit-animation: comming 2s;
+    -o-animation: comming 2s;
+    animation: comming 2s;
 }
 
 .menu{
@@ -27,12 +31,15 @@ nav{
     line-height: 60px;
     margin-right: 40px;
     font-size: 16px;
+    -webkit-animation: topshift 1s ease, comming 2s;
+    -o-animation: topshift 1s ease, comming 2s;
+    animation: topshift 1s ease, comming 2s;
 }
 
 .main{
     width: 100%;
     background: url(../img/boy.png) 90% 100%/auto 85% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
-    height: calc(100% - 60px);
+    height: 100%;
     
 }
 
@@ -41,6 +48,13 @@ nav{
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: leftshift 1s ease forwards;
+    -o-animation: leftshift 1s ease forwards;
+    animation: leftshift 1s ease forwards;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .title_container h1{
@@ -131,7 +145,7 @@ nav{
 .skills{
     width: 100%;
     height: 505px;
-    background: url(../img/bg2.jpg) center/cover no-repeat;
+    background: url(../img/bg2.jpg) center/cover fixed no-repeat;
 }
 
 .my_skills{
@@ -214,9 +228,9 @@ nav{
     height: 610px;
     width: 1170px
 }
+
 .descript{
     text-align: left;
-    
 }
 
 .descript1 h3{
@@ -331,7 +345,7 @@ nav{
 .statistics{
     width: 100%;
     height: 500px;
-    background: url(../img/bg3.jpg) center/cover no-repeat;
+    background: url(../img/bg3.jpg) center/cover fixed no-repeat;
 }
 
 .statistics_container{
@@ -555,4 +569,131 @@ footer p{
     padding: 41px;
     color: #fff;
     text-align: center;
+}
+
+.title_container input{
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.title_container input:hover{
+    background: #344051;
+    color: white;
+}
+
+.title_container input:active{
+    transform: scale(1.05);
+}
+
+@keyframes comming{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes topshift{
+    from{
+        margin-top: -80px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
+
+@keyframes leftshift{
+    from{
+        opacity: 0;
+        margin: 432px 0px 0px -500px;
+    }
+    to{
+        opacity: 1;
+        margin-top: 432px 0px 0px 404px;
+    }
+}
+
+.menu li a{
+    transition: all 0.2s;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited{
+    color: white;
+}
+
+.menu li a:hover{
+    color: #d57a01;
+}
+
+.menu li a:active{
+    transform: scale(1.05)
+}
+
+.about_me input{
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.about_me input:hover{
+    background: #344051;
+    color: white;
+}
+
+.about_me input:active{
+    transform: scale(1.05);
+}
+
+.descript input{
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.descript input:hover{
+    background: #6fcbc3;
+    border: #6fcbc3;
+    color: white;
+}
+
+.descript input:active{
+    transform: scale(1.03);
+}
+
+.submit input{
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.submit input:hover{
+    background: #eee;
+    color: #2d2c2c;
+}
+
+.submit input:active{
+    transform: scale(1.05);
+}
+
+.statistics_item img{
+    transition: all 0.2s;
+    transform: scale(1);
+}
+
+.statistics_item img:hover{
+    margin-bottom: 40px;
+    transform: scale(1.05);
+}
+
+.feedback img{
+    transition: all 0.2s;
+    transform: scale(1);
+    border: 1px solid #fff;
+    border-radius: 100%;
+}
+
+.feedback img:hover{
+    border: 4px solid #575757;
+    border-radius: 100%;
+    transform: scale(1.05);
 }
