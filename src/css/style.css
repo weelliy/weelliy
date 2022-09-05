@@ -8,6 +8,8 @@ nav{
     background: #344051;
     position: fixed;
     z-index: 10;
+    top: 0;
+    left: 0;
 }
 
 .logo{
