@@ -1,3 +1,23 @@
+@font-face {
+	font-family: 'FranklinGot';
+	src: url('../fonts/ofont.ru_Franklin Gothic Medium.eot');
+	src: local('☺'), url('../fonts/ofont.ru_Franklin Gothic Medium.woff') format('woff'), url('../fonts/ofont.ru_Franklin Gothic Medium.ttf') format('truetype'), url('../fonts/ofont.ru_Franklin Gothic Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+h2{
+    font-family: 'FranklinGot', sans-serif;
+}
+
+h1{
+    font-family: 'FranklinGot', sans-serif;
+}
+
+nav{
+    font-family: 'FranklinGot', sans-serif;
+}
+
 body{
     font-family: Arial, sans-serif;
 }
@@ -20,6 +40,7 @@ nav{
     -webkit-animation: comming 2s;
     -o-animation: comming 2s;
     animation: comming 2s;
+    font-family: 'FranklinGot', sans-serif;
 }
 
 .menu{
@@ -272,7 +293,7 @@ hr{
     margin-bottom: 23px;
 }
 
-.data span{
+.data p{
     font-size: 15px;
     font-weight: bold;
     color: #1c2534;
@@ -516,7 +537,7 @@ footer p{
 }
 
 .menu li a:hover{
-    color: #d57a01;
+    color: #f6b155;
 }
 
 .menu li a:active{
@@ -614,4 +635,59 @@ footer p{
         position: absolute;
         background: rgba(0, 0, 0, 0.4);
     }
+}
+
+li a.active{
+    color: #d57a01;
+}
+
+.menu li .active:visited{
+    color: #d57a01;
+}
+
+.data .digit{
+    font-size: 22px
+}
+
+.data .txt{
+    font-size: 17px
+}
+
+.sbox{
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+}
+
+.evbox input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background-color: #63b5ae;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    padding: 0px 20px;
+}
+
+.evbox input{
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.evbox input:hover{
+    background: #6fcbc3;
+    border: #6fcbc3;
+    color: white;
+}
+
+.evbox input:active{
+    transform: scale(1.03);
+}
+
+.about_me txtAnim{
+    opacity: 0;
+}
+
+.about_me .txtAnim .show_animation{
+    opacity: 1;
+    transition: opacity 1s;
 }
