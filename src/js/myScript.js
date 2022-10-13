@@ -1,5 +1,30 @@
 $(document).ready(function(){
     
+    $('form').submit(function(){
+        event.preventDefault();
+        
+        $.ajax({
+            type: "POST",
+            url: "php/mail.php",
+            data: $(this).serialize(),
+        }).done(function (){
+            $(this).find("input").val("");
+            alert("Успешно отправлено!");
+            $("form").trigger("reset");
+        });
+        return false;
+    });
+    
+    $("#inputTel").mask("+7(999) 999-9999");
+    
+    $('form').submit(function(){
+        if ($("#inputTel").val() == "" || $("#inputMail").val() == ""){
+        alert("Введите свои данные");
+    }
+    });
+    
+    new WOW().init();
+    
     function modWind() {
         $("#myModal").modal("show")
     };

@@ -5,10 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robost" content="all">
     <title>Андрей Браун - Веб-разработчик</title>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90742935, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90742935" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/loader.css">
 </head>
 <body>
@@ -60,7 +78,7 @@
        <nav>
            <div class="container">
                <div class="row">
-                   <div class="col-xxl-2 col-lg-3 col-7"><div class="logo">Андрей Браун</div></div>
+                   <div class="col-xxl-2 col-lg-3 col-7"><div class="logo animate__animated animate__pulse">Андрей Браун</div></div>
                    <div class="px-0 col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block"><section class="menu">
                 <ul>
                     <li><a class="active" href="#aboutMe">ОБО МНЕ</a></li>
@@ -102,7 +120,7 @@
                 Фулл стек веб-разработчик и Android-разработчик
             </h4>
             <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <input type="submit" onclick="ym(90742935,'reachGoal','cases'); return true;" value="Мои работы">
         </div>
       </div></div></div>
     </section>
@@ -115,8 +133,8 @@
         <br>
         <img class="d-block mx-auto" src="img/фотка.png" alt="">
         <div class="row justify-content-center">
-            <div class="txtAnim col-12 col-sm-10 col-md-9 col-lg-8 text-center text-md-start"><p class="firstTxt mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic illum ratione dolorem sint, ducimus repellat. Natus consequuntur unde maiores non, labore facilis ad reiciendis.</p>
-        <p class="secondTxt mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis dolorem laboriosam quod, expedita debitis libero aspernatur repellendus, odio repellat accusamus ipsa delectus tempore sunt.</p></div>
+            <div class="txtAnim col-12 col-sm-10 col-md-9 col-lg-8 text-center text-md-start"><p class="firstTxt mt-3 wow animate__animated animate__backInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa hic illum ratione dolorem sint, ducimus repellat. Natus consequuntur unde maiores non, labore facilis ad reiciendis.</p>
+        <p class="secondTxt mt-5 wow animate__animated animate__backInDown">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores blanditiis dolorem laboriosam quod, expedita debitis libero aspernatur repellendus, odio repellat accusamus ipsa delectus tempore sunt.</p></div>
         </div>
         <div class="row justify-content-center mb-5"><div class="col-6 col-sm-5 col-md-4 col-lg-2 text-center">
             <a href="#">Скачать резюме</a>
@@ -381,16 +399,18 @@
         </div>
         <div class="letter row justify-content-center text-center">
             <h2>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h2>
-            <div class="namema">
-                <input class="dat col-5 col-sm-4" type="text" name="text_input" placeholder="Имя">
-                <input class="dat col-5 col-sm-4" type="text" name="text_input" placeholder="Email">
-            </div>
-            <div class="lett">
-                <textarea class="col-10 col-sm-8" placeholder="Сообщение" name="" id="" cols="50" rows="5"></textarea>
-            </div>
-            <div class="submit">
-                <input type="submit" value="Отправить">
-            </div>
+            <form action="php/mail.php" method="POST">
+                <div class="namema">
+                    <input class="dat col-5 col-sm-4" type="text" name="userEmail" id="inputMail" placeholder="Email">
+                    <input class="dat col-5 col-sm-4" type="phone" name="userTel" id="inputTel" placeholder="Телефон">
+                </div>
+                <div class="lett">
+                    <textarea class="col-10 col-sm-8" placeholder="Сообщение" cols="50" rows="5"></textarea>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Отправить">
+                </div>
+            </form>
             <div class="socials row col-5">
                <div class="networks">
                    <img src="img/фб.png" alt="">
@@ -417,7 +437,7 @@
     </section>
     
     <section class="map">
-        <img class="imgLoad" src="img/mappa-bad.jpg" data-src="img/mappa-good.jpg" alt="">
+       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A75c165c137e843ba73292c3ee4db2c6caf7b653a36f63101e34816cd5e99de6a&amp;width=100%25&amp;height=366&amp;lang=ru_RU&amp;scroll=false"></script>
     </section> 
     
     <footer class="justify-content-center text-center">
@@ -427,6 +447,8 @@
     <script src="js/bootstrap.bundle.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/maskedinput.min.js"></script>
     <script src="js/myScript.js"></script>
     
 </body>

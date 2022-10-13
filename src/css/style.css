@@ -691,3 +691,7 @@ li a.active{
     opacity: 1;
     transition: opacity 1s;
 }
+
+.about_me .txtAnim{
+overflow: hidden;
+}
